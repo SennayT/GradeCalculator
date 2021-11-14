@@ -1,4 +1,4 @@
 module.exports = {
   transpileDependencies: ["vuetify"],
-  publicPath: "GradeCalculator",
+  publicPath: process.env.NODE_ENV === "production" ? "/GradeCalculator/" : "/",
 };
